@@ -1,0 +1,44 @@
+[
+	{
+		"team": "detroitredwings",
+		"displayName": "Detroit Red Wings",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "coloradoavalanche",
+		"displayName": "Colorado Avalanche",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "newyorkrangers",
+		"displayName": "New York Rangers",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	}
+]

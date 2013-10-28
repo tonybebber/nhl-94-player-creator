@@ -1,0 +1,340 @@
+$pixelSize: 5px;
+
+/* row positioning */
+.row0 {
+    top: $pixelSize * 0; 
+}
+.row1 {
+    top: $pixelSize * 1; 
+}
+.row2 {
+    top: $pixelSize * 2;
+}
+.row3 {
+    top: $pixelSize * 3; 
+}
+.row4 {
+    top: $pixelSize * 4; 
+} 
+.row5 {
+    top: $pixelSize * 5; 
+}
+.row6 {
+    top: $pixelSize * 6; 
+}
+.row7 {
+    top: $pixelSize * 7; 
+}
+.row8 {
+    top: $pixelSize * 8; 
+}
+.row9 {
+    top: $pixelSize * 9; 
+}
+.row10 {
+    top: $pixelSize * 10; 
+}
+.row11 {
+    top: $pixelSize * 11; 
+}
+.row12 {
+    top: $pixelSize * 12; 
+}
+.row13 {
+    top: $pixelSize * 13; 
+}
+.row14 {
+    top: $pixelSize * 14; 
+}
+.row15 {
+    top: $pixelSize * 15; 
+}
+.row16 {
+    top: $pixelSize * 16; 
+}
+.row17 {
+    top: $pixelSize * 17; 
+}
+.row18 {
+    top: $pixelSize * 18; 
+}
+.row19 {
+    top: $pixelSize * 19; 
+}
+.row20 {
+    top: $pixelSize * 20; 
+}
+.row21 {
+    top: $pixelSize * 21; 
+}
+.row22 {
+    top: $pixelSize * 22; 
+}
+.row23 {
+    top: $pixelSize * 23; 
+}
+.row24 {
+    top: $pixelSize * 24; 
+}
+.row25 {
+    top: $pixelSize * 25; 
+}
+.row26 {
+    top: $pixelSize * 26; 
+}
+.row27 {
+    top: $pixelSize * 27; 
+}
+.row28 {
+    top: $pixelSize * 28; 
+}
+.row29 {
+    top: $pixelSize * 29; 
+}
+.row30 {
+    top: $pixelSize * 30; 
+}
+.row31 {
+    top: $pixelSize * 31; 
+}
+.row32 {
+    top: $pixelSize * 32; 
+}
+.row33 {
+    top: $pixelSize * 33; 
+}
+.row34 {
+    top: $pixelSize * 34; 
+}
+.row35 {
+    top: $pixelSize * 35; 
+}
+.row36 {
+    top: $pixelSize * 36; 
+}
+
+
+/* column positioning */
+.column0 {
+    left: $pixelSize * 0; 
+}
+.column1 {
+    left: $pixelSize * 1; 
+}
+.column2 {
+    left: $pixelSize * 2; 
+}
+.column3 {
+    left: $pixelSize * 3; 
+}
+.column4 {
+    left: $pixelSize * 4; 
+}
+.column5 {
+    left: $pixelSize * 5; 
+}
+.column6 {
+    left: $pixelSize * 6; 
+}
+.column7 {
+    left: $pixelSize * 7; 
+}
+.column8 {
+    left: $pixelSize * 8; 
+}
+.column9 {
+    left: $pixelSize * 9; 
+}
+.column10 {
+    left: $pixelSize * 10; 
+}
+.column11 {
+    left: $pixelSize * 11; 
+}
+.column12 {
+    left: $pixelSize * 12; 
+}
+.column13 {
+    left: $pixelSize * 13; 
+}
+.column14 {
+    left: $pixelSize * 14; 
+}
+.column15 {
+    left: $pixelSize * 15; 
+}
+.column16 {
+    left: $pixelSize * 16; 
+}
+.column17 {
+    left: $pixelSize * 17; 
+}
+.column18 {
+    left: $pixelSize * 18; 
+}
+.column19 {
+    left: $pixelSize * 19; 
+}
+.column20 {
+    left: $pixelSize * 20; 
+}
+.column21 {
+    left: $pixelSize * 21; 
+}
+.column22 {
+    left: $pixelSize * 22; 
+}
+.column23 {
+    left: $pixelSize * 23; 
+}
+.column24 {
+    left: $pixelSize * 24; 
+}
+.column25 {
+    left: $pixelSize * 25; 
+}
+.column26 {
+    left: $pixelSize * 26; 
+}
+.column27 {
+    left: $pixelSize * 27; 
+}
+.column28 {
+    left: $pixelSize * 28; 
+}
+.column29 {
+    left: $pixelSize * 29; 
+}
+.column30 {
+    left: $pixelSize * 30; 
+}
+.column31 {
+    left: $pixelSize * 31; 
+}
+.column32 {
+    left: $pixelSize * 32; 
+}
+.column33 {
+    left: $pixelSize * 33; 
+}
+.column34 {
+    left: $pixelSize * 34; 
+}
+.column35 {
+    left: $pixelSize * 35; 
+}
+.column36 {
+    left: $pixelSize * 36; 
+}
+.column37 {
+    left: $pixelSize * 37; 
+}
+.column38 {
+    left: $pixelSize * 38; 
+}
+.column39 {
+    left: $pixelSize * 39; 
+}
+.column40 {
+    left: $pixelSize * 40; 
+}
+.column41 {
+    left: $pixelSize * 41; 
+}
+.column42 {
+    left: $pixelSize * 42; 
+}
+.column43 {
+    left: $pixelSize * 43; 
+}
+
+
+/* player styles */
+.player {
+  position: relative;
+
+    &.left {
+        
+    }
+
+    &.right {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
+  
+    span.pixel {
+        width: $pixelSize;
+        height: $pixelSize;
+        position: absolute;
+    }
+
+    .black {
+        background-color: #222;
+    }
+
+    .shade {
+        background-color: #222;
+        filter: alpha(opacity=20);
+        opacity: 0.2;
+    }
+
+    .skin {
+        background-color: #D78f99;
+    }
+
+    .eyes {
+        background-color: #670109;
+    }
+
+    .stick {
+        background-color: #D8905D; 
+    }
+
+    .ice {
+        background-color: #4A90A7;
+    } 
+}
+
+
+/* star styles */
+.star {
+    position: relative;
+
+    span.pixel {
+        width: $pixelSize;
+        height: $pixelSize;
+        position: absolute;
+    }
+
+    .outline {
+        background-color: #021951;
+    }
+
+    .ice {
+        background-color: #8CEFEA;
+    }
+
+    .glare {
+        background-color: #FFF;
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+}
+
+/* numberAndPosition styles */
+.numberAndPosition {
+    position: absolute;
+    font-family: 'nhl_94regular';
+    color: #777;
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 1px 1px 0px #222;
+    text-align: center;
+    width: 100%;
+    bottom: 14px;
+}
+

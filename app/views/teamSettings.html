@@ -1,0 +1,17 @@
+<div class="teamSettings">
+	<div class="heading">
+	    <h3>Choose your team settings...</h3>
+	</div>
+	<div class="clear"></div>
+	<div class="playerWrap" player-type="{{player}}" ng-mouseover="showStar()" ng-mouseout="hideStar()">
+		<star-under></star-under>
+		<player-one></player-one>
+		<number-and-position number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
+	</div>
+	<div class="formControls">
+		<select ng-model="selectedTeam" ng-options="team.team as team.displayName for team in allTeams"></select>
+		<select ng-model="selectedJersey" ng-options="jersey.className as jersey.displayName for jersey in teamsJerseys"></select>
+		<pagination back="/#/playerType" next="/#/{{player}}/{{teamName}}/{{jersey}}/playerSettings"></pagination>
+	</div>
+</div>
+

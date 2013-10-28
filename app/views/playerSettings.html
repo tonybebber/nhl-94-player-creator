@@ -1,0 +1,21 @@
+<div class="playerSettings">
+	<div class="heading">
+	    <h3>Choose your player settings...</h3>
+	</div>
+	<div class="clear"></div>
+	<div class="playerWrap" player-type="{{player}}" ng-mouseover="showStar()" ng-mouseout="hideStar()">
+		<star-under></star-under>
+		<player-one></player-one>
+		<number-and-position number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
+	</div>
+	<div class="formControls">
+		<select ng-model="hand" ng-options="hand.name as hand.displayName for hand in hands"></select>
+
+		<div>
+			<select class="halfSelect" ng-model="playerNumber" ng-options="number for number in numbers"></select>
+			<select class="halfSelect" ng-model="playerPosition" ng-options="position.value as position.display for position in positions"></select>
+		</div>
+
+		<pagination back="/#/{{player}}/teamSettings" next="/#/{{player}}/{{teamName}}/{{jersey}}/{{hand}}/{{playerNumber}}/{{playerPosition}}"></pagination>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+/* - DETROIT RED WINGS - */
+.detroitredwings {
+    &.home {
+        .uniform-light {
+            background-color: #D8D8D8;
+        }
+        .uniform-medium {
+            background-color: #B0B4B0;
+        }
+        .uniform-dark {
+            background-color: #AE0517;
+        }
+        .uniform-dark-alt {
+            background-color: #AE0517;
+        }
+        .uniform-pants {
+            background-color: #AE0517; 
+        }
+        .uniform-helmet {
+            background-color: #AE0517; 
+        }
+    }
+}

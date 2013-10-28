@@ -1,0 +1,318 @@
+@import "bootstrap-sass/lib/bootstrap";
+@import "players/player_styles";
+
+/* NHL Team Styles */
+@import "leagues/nhl/teams/coloradoavalanche";
+@import "leagues/nhl/teams/detroitredwings";
+@import "leagues/nhl/teams/newyorkrangers";
+
+@font-face {
+    font-family: 'OctinSportsRgRegular';
+    src: url('/fonts/octin_sports_rg-webfont.eot');
+    src: url('/fonts/octin_sports_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/octin_sports_rg-webfont.woff') format('woff'),
+         url('/fonts/octin_sports_rg-webfont.ttf') format('truetype'),
+         url('/fonts/octin_sports_rg-webfont.svg#OctinSportsRgRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nhl_94regular';
+    src: url('/fonts/nhl_94-webfont.eot');
+    src: url('/fonts/nhl_94-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/nhl_94-webfont.woff') format('woff'),
+         url('/fonts/nhl_94-webfont.ttf') format('truetype'),
+         url('/fonts/nhl_94-webfont.svg#nhl_94regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chunkfiveroman';
+    src: url('/fonts/chunkfive-webfont.eot');
+    src: url('/fonts/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/chunkfive-webfont.woff') format('woff'),
+         url('/fonts/chunkfive-webfont.ttf') format('truetype'),
+         url('/fonts/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Put your CSS here */
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.background-image {
+    height: 100%;
+    width: 100%;
+    background: url('/images/app-background-2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    zoom: 1;
+    filter: alpha(opacity=20);
+    opacity: 0.20;
+    position: absolute;
+}
+
+body {
+    background: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    height: 100%;
+    display: table;
+    position: relative;
+
+    .btn-primary {
+        background-color: #1360A1;
+        background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#6CA4B6), to(#1360A1));
+        background-image: -webkit-linear-gradient(#6CA4B6, #1360A1);
+        background-image: -moz-linear-gradient(#6CA4B6, #1360A1);
+        background-image: -o-linear-gradient(#6CA4B6, #1360A1);
+        background-image: linear-gradient(#6CA4B6, #1360A1);
+    }
+
+    a {
+        color: #AC0F2B;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #1360A1;
+    }
+}
+
+/* pageWrap styles */
+.pageWrap {
+    float: none;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+
+    h1 {
+        color: #1360A1;
+        font-size: 3em;
+        margin: 0;
+        text-transform: uppercase;
+        display: inline;
+        font-family: 'nhl_94regular';
+        position: absolute;
+        z-index: 1000;
+        margin-top: -10px;
+        margin-left: 40px;
+        text-shadow: 5px 0px 1px #FFF;
+    }
+
+    h2 {
+        color: #AC0F2B;
+        font-size: 10px;
+        position: absolute;
+        margin-top: -28px;
+        margin-left: 268px;
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+
+    .wellWrap {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .well {
+        margin: -4px 0 0 0;
+        background-color: #FFF;
+        position: relative;
+        min-height: 220px;
+        max-height: 220px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        .heading {
+            display: block;
+            height: 24px;
+
+            h1 {
+                color: #1360A1;
+                font-size: 2em;
+                margin: 0;
+                text-transform: uppercase;
+                display: inline-block;
+                font-family: 'nhl_94regular';
+
+                a {
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+
+            h3 {
+                font-size: 16px;
+                font-weight: normal;
+                color: #AC0F2B;
+                display: inline-block;
+                margin: 0;
+                line-height: 16px;
+                padding: 0;
+                width: 345px;
+                float: right;
+                letter-spacing: 1px;
+                padding: 4px 0;
+                border-bottom: 1px solid #DDD;
+                margin-bottom: 18px;
+            }
+        }
+
+        .pageContent {
+            display: block;
+        }
+
+        .intro-text {
+            margin-top: 6px;
+
+            p {
+                padding-left: 194px;
+                margin-bottom: 17px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        .btn-primary {
+            background-color: #1360A1;
+            background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#6CA4B6), to(#1360A1));
+            background-image: -webkit-linear-gradient(#6CA4B6, #1360A1);
+            background-image: -moz-linear-gradient(#6CA4B6, #1360A1);
+            background-image: -o-linear-gradient(#6CA4B6, #1360A1);
+            background-image: linear-gradient(#6CA4B6, #1360A1);
+            text-shadow: none;
+            color: #FFF;
+            padding: 0;
+        }
+
+        .btn-next, .btn-back {
+            padding: 4px 10px 3px;
+            font-size: 12px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .btn-back {
+            right: 90px;
+
+            &.last-page-back-button {
+                right: 155px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn-steps {
+            position: absolute;
+            right: -26px;
+            top: 14px;
+
+            .chiclet {
+                padding: 6px 9px;
+                display: block;
+            }
+        }
+    }
+
+    img {
+        margin: -10px 0 0 0;
+    }
+
+    small.details {
+        color: #333;
+        font-size: .7em;
+        display: block;
+        position: relative;
+
+        &.span6 {
+            margin-left: 0;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    /* main.html styles */
+    .main, .teamSettings, .playerSettings {
+        
+        .playerWrap {
+            margin: -22px 0 0 -34px;
+            width: 235px;
+            height: 216px;
+            position: absolute;
+        }
+    }
+
+    /* playerType.html styles */
+    .playerType {
+
+        .playerWrapOne {
+            display: block;
+            margin: -22px 0 0 -34px;
+            width: 235px;
+            height: 216px;
+            position: absolute;
+        }
+        .playerWrapOne:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* teamSettings.html styles*/
+    .teamSettings {
+        
+        
+    }
+
+    /* playerSettings.html styles*/
+    .playerSettings {
+
+        .halfSelect {
+            width: 48%;
+            display: inline-block;
+        }
+        .halfSelect:last-child {
+            float: right;
+        }
+    }
+
+    .formControls {
+        margin: 0 0 0 172px;
+        padding: 10px 0 20px 20px;
+
+        select {
+            width: 100%;
+            margin: 13px 0;
+        }
+    }
+
+}
+
+.modal {
+    width: 235px;
+    margin-left: -117px;
+}
