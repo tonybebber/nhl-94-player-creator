@@ -73,7 +73,18 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl', ['$scope', '
         html2canvas(element, {
             onrendered: function(canvas) {
                 var playerImg = canvas.toDataURL("image/png");
-                $('body').append('<img id="finalPlayer" class="modal hide fade" tabindex="-1" src="'+playerImg+'"/>');
+
+                var template = '<ul id="finalPlayer" class="thumbnails modal hide fade">' + 
+                                    '<li class="span4">' +
+                                        '<div class="thumbnail">' +
+                                            '<img src="'+playerImg+'"/>' +
+                                            '<h3>Thumbnail label</h3>' +
+                                            '<p>Thumbnail caption...</p>' +
+                                        '</div>' +
+                                    '</li>' +
+                                '</ul>';
+
+                $('body').append(template);
                 $('#finalPlayer').modal({});
             }
         });

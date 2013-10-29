@@ -169,12 +169,12 @@ body {
                 margin: 0;
                 line-height: 16px;
                 padding: 0;
-                width: 345px;
+                width: 428px;
                 float: right;
                 letter-spacing: 1px;
                 padding: 4px 0;
                 border-bottom: 1px solid #DDD;
-                margin-bottom: 18px;
+                margin-top: 6px;
             }
         }
 
@@ -183,7 +183,7 @@ body {
         }
 
         .intro-text {
-            margin-top: 6px;
+            margin-top: 15px;
 
             p {
                 padding-left: 194px;
@@ -206,7 +206,7 @@ body {
         }
 
         .btn-next, .btn-back {
-            padding: 4px 10px 3px;
+            padding: 8px 10px;
             font-size: 12px;
             position: absolute;
             right: 20px;
@@ -260,7 +260,7 @@ body {
     .main, .teamSettings, .playerSettings {
         
         .playerWrap {
-            margin: -22px 0 0 -34px;
+            margin: -5px 0 0 -34px;
             width: 235px;
             height: 216px;
             position: absolute;
@@ -272,7 +272,7 @@ body {
 
         .playerWrapOne {
             display: block;
-            margin: -22px 0 0 -34px;
+            margin: -5px 0 0 -34px;
             width: 235px;
             height: 216px;
             position: absolute;
@@ -307,12 +307,17 @@ body {
         select {
             width: 100%;
             margin: 13px 0;
+            height: 38px;
         }
     }
 
 }
 
 .modal {
-    width: 235px;
-    margin-left: -117px;
+    width: 340px;
+    margin-left: -170px;
+}
+
+.thumbnails > li {
+    margin: 20px;
 }
