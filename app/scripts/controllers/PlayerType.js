@@ -10,12 +10,14 @@ angular.module('playerCreatorApp').controller('PlayerTypeCtrl', ['$scope', '$rou
     $scope.playerNumber = '99';
     $scope.playerPosition = 'C';
 
-    $scope.showInfo = function() {
-    	$scope.infoVisible = true;
+    $scope.infoVisible = {};
+
+    $scope.showInfo = function(num) {
+    	$scope.infoVisible[num] = true;
     };
 
-	$scope.hideInfo = function() {
-		$scope.infoVisible = false;
+	$scope.hideInfo = function(num) {
+		$scope.infoVisible[num] = false;
 	};
 
 	$scope.setPlayerType = function(type) {

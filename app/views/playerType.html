@@ -4,10 +4,24 @@
 	</div>
 	<div class="clear"></div>
 	<a class="playerWrapOne" ng-click="setPlayerType('player')" ng-href="/#/{{player}}/teamSettings">
+		<div player-type="{{player}}" ng-mouseover="showInfo('one')" ng-mouseout="hideInfo('one')">
+			<star-under ng-show="infoVisible['one']"></star-under>
+			<player-one></player-one>
+			<number-and-position ng-show="infoVisible['one']" number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
+		</div>
+	</a>
+	<a class="playerWrapTwo" ng-click="setPlayerType('player')" ng-href="/#/{{player}}/teamSettings">
+		<div player-type="{{player}}" ng-mouseover="showInfo('two')" ng-mouseout="hideInfo('two')">
+			<star-under ng-show="infoVisible['two']"></star-under>
+			<player-two></player-two>
+			<number-and-position ng-show="infoVisible['two']" number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
+		</div>
+	</a>
+	<!-- <a class="playerWrapOne" ng-click="setPlayerType('player')" ng-href="/#/{{player}}/teamSettings">
 		<div player-type="{{player}}" ng-mouseover="showInfo()" ng-mouseout="hideInfo()">
 			<star-under ng-show="infoVisible"></star-under>
 			<player-one></player-one>
 			<number-and-position ng-show="infoVisible" number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
 		</div>
-	</a>
+	</a> -->
 </div>
