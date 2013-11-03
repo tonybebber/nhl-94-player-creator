@@ -5,7 +5,8 @@
 	<div class="clear"></div>
 	<div class="playerWrap" player-type="{{player}}" ng-mouseover="showStar()" ng-mouseout="hideStar()">
 		<star-under></star-under>
-		<player-one></player-one>
+		<player-one ng-show="player == 'player'"></player-one>
+		<player-two ng-show="player == 'goalie'"></player-two>
 		<number-and-position number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
 	</div>
 	<div class="formControls">

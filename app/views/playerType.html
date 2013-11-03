@@ -10,7 +10,7 @@
 			<number-and-position ng-show="infoVisible['one']" number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
 		</div>
 	</a>
-	<a class="playerWrapTwo" ng-click="setPlayerType('player')" ng-href="/#/{{player}}/teamSettings">
+	<a class="playerWrapTwo" ng-click="setPlayerType('goalie')" ng-href="/#/{{player}}/teamSettings">
 		<div player-type="{{player}}" ng-mouseover="showInfo('two')" ng-mouseout="hideInfo('two')">
 			<star-under ng-show="infoVisible['two']"></star-under>
 			<player-two></player-two>
