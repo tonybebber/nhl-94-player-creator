@@ -291,6 +291,17 @@ body {
         .playerWrapTwo:hover {
             cursor: pointer;
         }
+
+        .playerWrapThree {
+            display: block;
+            margin: -5px 0 0 336px;
+            width: 235px;
+            height: 216px;
+            position: absolute;
+        }
+        .playerWrapThree:hover {
+            cursor: pointer;
+        }
     }
 
     /* teamSettings.html styles*/

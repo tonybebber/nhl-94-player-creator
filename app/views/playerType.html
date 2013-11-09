@@ -17,11 +17,11 @@
 			<number-and-position ng-show="infoVisible['two']" player-type="goalie" number="{{goalieNumber}}" position="{{goaliePosition}}"></number-and-position>
 		</div>
 	</a>
-	<!-- <a class="playerWrapOne" ng-click="setPlayerType('player')" ng-href="/#/{{player}}/teamSettings">
-		<div player-type="{{player}}" ng-mouseover="showInfo()" ng-mouseout="hideInfo()">
-			<star-under ng-show="infoVisible"></star-under>
-			<player-one></player-one>
-			<number-and-position ng-show="infoVisible" player-type="enforcer" number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
+	<a class="playerWrapThree" ng-click="setPlayerType('enforcer')" ng-href="/#/{{player}}/teamSettings">
+		<div player-type="{{player}}" ng-mouseover="showInfo('three')" ng-mouseout="hideInfo('three')">
+			<star-under ng-show="infoVisible['three']"></star-under>
+			<player-three></player-three>
+			<number-and-position ng-show="infoVisible['three']" player-type="enforcer" number="{{enforcerNumber}}" position="{{enforcerPosition}}"></number-and-position>
 		</div>
-	</a> -->
+	</a>
 </div>

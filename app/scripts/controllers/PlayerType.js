@@ -18,6 +18,10 @@ angular.module('playerCreatorApp').controller('PlayerTypeCtrl',
   $scope.goalieNumber = defaultPlayerService.goalie.number;
   $scope.goaliePosition = defaultPlayerService.goalie.position;
 
+  // enforcer defaults
+  $scope.enforcerNumber = defaultPlayerService.enforcer.number;
+  $scope.enforcerPosition = defaultPlayerService.enforcer.position;
+
   $scope.infoVisible = {};
 
   $scope.showInfo = function(num) {
