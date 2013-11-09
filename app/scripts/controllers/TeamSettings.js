@@ -1,12 +1,21 @@
 'use strict';
 
 angular.module('playerCreatorApp').controller('TeamSettingsCtrl', 
-	['$scope', '$routeParams', 'teamsService', function ($scope, $routeParams, teamsService) {
+	['$scope', '$routeParams', 'teamsService', 'defaultPlayerService', function ($scope, $routeParams, teamsService, defaultPlayerService) {
 
-	$scope.selectedTeam = $scope.teamName = 'newyorkrangers';
-    $scope.selectedJersey = $scope.jersey = 'home';
-    $scope.playerNumber = '99';
-    $scope.playerPosition = 'C';
+    if ($routeParams.playerType === 'player') {
+        $scope.playerNumber = defaultPlayerService.player.number;
+        $scope.playerPosition = defaultPlayerService.player.position;    
+    } else if ($routeParams.playerType === 'goalie') {
+        $scope.playerNumber = defaultPlayerService.goalie.number;
+        $scope.playerPosition = defaultPlayerService.goalie.position;  
+    } else {
+        // enforcer num and pos go here
+    }
+
+	$scope.selectedTeam = $scope.teamName = defaultPlayerService.player.team;
+    $scope.selectedJersey = $scope.jersey = defaultPlayerService.player.jersey;
+
     $scope.selectedJersey = $scope.jersey;
     $scope.player = $routeParams.playerType;
 

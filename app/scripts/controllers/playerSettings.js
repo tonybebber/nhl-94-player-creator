@@ -1,14 +1,23 @@
 'use strict';
 
-angular.module('playerCreatorApp').controller('PlayerSettingsCtrl', ['$scope', '$routeParams', '$timeout', function ($scope, $routeParams, $timeout) {
+angular.module('playerCreatorApp').controller('PlayerSettingsCtrl', 
+    ['$scope', '$routeParams', '$timeout', 'defaultPlayerService', function ($scope, $routeParams, $timeout, defaultPlayerService) {
 
 	$scope.teamName = $routeParams.team;
 	$scope.jersey = $routeParams.jersey;
     $scope.player = $routeParams.playerType;
 
-    $scope.hand = 'left';
-    $scope.playerNumber = '99';
-    $scope.playerPosition = 'C';
+    $scope.hand = defaultPlayerService.player.hand;
+
+    if ($routeParams.playerType === 'player') {
+        $scope.playerNumber = defaultPlayerService.player.number;
+        $scope.playerPosition = defaultPlayerService.player.position;    
+    } else if ($routeParams.playerType === 'goalie') {
+        $scope.playerNumber = defaultPlayerService.goalie.number;
+        $scope.playerPosition = defaultPlayerService.goalie.position;  
+    } else {
+        // enforcer num and pos go here
+    }
 
   	$scope.hands = [
   		{

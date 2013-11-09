@@ -1,16 +1,22 @@
 'use strict';
 
-angular.module('playerCreatorApp').controller('PlayerTypeCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+angular.module('playerCreatorApp').controller('PlayerTypeCtrl', 
+  ['$scope', '$routeParams', 'defaultPlayerService', function ($scope, $routeParams, defaultPlayerService) {
 
  	$scope.playerTypes = ['player', 'goalie', 'enforcer'];
  	$scope.selectedPlayerType = null;
 
- 	$scope.teamName = 'newyorkrangers';
-  $scope.jersey = 'home';
-  $scope.playerNumber = '99';
-  $scope.playerPosition = 'C';
+  // team/jersey defaults
+ 	$scope.teamName = defaultPlayerService.player.team;
+  $scope.jersey = defaultPlayerService.player.jersey;
+  
+  // player defaults
+  $scope.playerNumber = defaultPlayerService.player.number;
+  $scope.playerPosition = defaultPlayerService.player.position;
 
-
+  // goalie defaults
+  $scope.goalieNumber = defaultPlayerService.goalie.number;
+  $scope.goaliePosition = defaultPlayerService.goalie.position;
 
   $scope.infoVisible = {};
 

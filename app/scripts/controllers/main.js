@@ -1,10 +1,11 @@
 'use strict';
 
-angular.module('playerCreatorApp').controller('MainCtrl', ['$scope', function ($scope) {
+angular.module('playerCreatorApp').controller('MainCtrl', 
+	['$scope', 'defaultPlayerService', function ($scope, defaultPlayerService) {
 	
-	$scope.teamName = 'newyorkrangers';
-    $scope.jersey = 'home';
-    $scope.playerNumber = '99';
-    $scope.playerPosition = 'C';
+	$scope.teamName = defaultPlayerService.player.team;
+    $scope.jersey = defaultPlayerService.player.jersey;
+    $scope.playerNumber = defaultPlayerService.player.number;
+    $scope.playerPosition = defaultPlayerService.player.position;
 
 }]);
