@@ -4,14 +4,20 @@
 	</div>
 	<div class="clear"></div>
 	<div class="playerWrap" player-type="{{player}}" ng-mouseover="showStar()" ng-mouseout="hideStar()">
-		<star-under></star-under>
-		<div ng-show="player == 'player'">
-			<player-one></player-one>
-			<number-and-position number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
-		</div>
-		<div ng-show="player == 'goalie'">
-			<player-two></player-two>
-			<number-and-position number="{{goalieNumber}}" position="{{goaliePosition}}"></number-and-position>
+		<div class="playerImage">
+			<star-under></star-under>
+			<div ng-show="player == 'player'">
+				<player-one></player-one>
+				<number-and-position number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
+			</div>
+			<div ng-show="player == 'goalie'">
+				<player-two></player-two>
+				<number-and-position number="{{goalieNumber}}" position="{{goaliePosition}}"></number-and-position>
+			</div>
+			<div ng-show="player == 'enforcer'">
+				<player-three></player-three>
+				<number-and-position number="{{enforcerNumber}}" position="{{enforcerPosition}}"></number-and-position>
+			</div>
 		</div>
 	</div>
 	<div class="formControls">

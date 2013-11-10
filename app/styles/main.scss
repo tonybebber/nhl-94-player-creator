@@ -260,10 +260,11 @@ body {
     .main, .teamSettings, .playerSettings {
         
         .playerWrap {
-            margin: -5px 0 0 -34px;
+            margin: -25px 0 0 -34px;
             width: 235px;
             height: 216px;
             position: absolute;
+            padding-top: 20px;
         }
     }
 

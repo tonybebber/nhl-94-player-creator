@@ -16,7 +16,8 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
         $scope.playerNumber = defaultPlayerService.goalie.number;
         $scope.playerPosition = defaultPlayerService.goalie.position;  
     } else {
-        // enforcer num and pos go here
+        $scope.playerNumber = defaultPlayerService.enforcer.number;
+        $scope.playerPosition = defaultPlayerService.enforcer.position; 
     }
 
   	$scope.hands = [

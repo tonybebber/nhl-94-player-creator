@@ -8,9 +8,10 @@ angular.module('playerCreatorApp').controller('TeamSettingsCtrl',
         $scope.playerPosition = defaultPlayerService.player.position;    
     } else if ($routeParams.playerType === 'goalie') {
         $scope.playerNumber = defaultPlayerService.goalie.number;
-        $scope.playerPosition = defaultPlayerService.goalie.position;  
+        $scope.playerPosition = defaultPlayerService.goalie.position; 
     } else {
-        // enforcer num and pos go here
+        $scope.playerNumber = defaultPlayerService.enforcer.number;
+        $scope.playerPosition = defaultPlayerService.enforcer.position;
     }
 
 	$scope.selectedTeam = $scope.teamName = defaultPlayerService.player.team;
