@@ -85,11 +85,12 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
                 var playerImg = canvas.toDataURL("image/png");
 
                 var template = '<ul id="finalPlayer" class="thumbnails modal hide fade">' + 
-                                    '<li class="span4">' +
+                                    '<li class="span3">' +
                                         '<div class="thumbnail">' +
-                                            '<img src="'+playerImg+'"/>' +
-                                            '<h3>Thumbnail label</h3>' +
-                                            '<p>Thumbnail caption...</p>' +
+                                            '<a href="data:image/png;'+playerImg+'" download="nhl94player.png">' +
+                                                '<img class="tooltipPlayer" src="'+playerImg+'" title="Click to download your player!"/>' +
+                                            '</a>' +
+                                            '<p><a href="data:image/png;'+playerImg+'" download="nhl94player.png" class="btn btn-primary btn-next">Download Player <i class="icon-download"></i></a></p>' +
                                         '</div>' +
                                     '</li>' +
                                 '</ul>';

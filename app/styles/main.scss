@@ -337,8 +337,24 @@ body {
 }
 
 .modal {
-    width: 340px;
-    margin-left: -170px;
+    width: 260px;
+    margin-left: -120px;
+}
+
+#finalPlayer {
+
+    p {
+        text-align: center;
+    }
+
+    .btn-primary {
+        background-color: #1360A1;
+        background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#6CA4B6), to(#1360A1));
+        background-image: -webkit-linear-gradient(#6CA4B6, #1360A1);
+        background-image: -moz-linear-gradient(#6CA4B6, #1360A1);
+        background-image: -o-linear-gradient(#6CA4B6, #1360A1);
+        background-image: linear-gradient(#6CA4B6, #1360A1);
+    }
 }
 
 .thumbnails > li {
