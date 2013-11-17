@@ -35,9 +35,12 @@
             <h2>Player Creator</h2>
             <div class="wellWrap">
                 <div class="well">
+                    <div id="spinner"></div>
                     <!-- Add your site or application content here -->
-                    <div class="pageContent" ng-view></div>  
-                    <nav></nav>
+                    <div id="loadedContent">
+                        <div class="pageContent" ng-view></div>  
+                        <nav></nav>
+                    </div>
                 </div>
             </div>
             <small class="details span6">&copy;2013 Built by <a href="http://tonybebber.com">Tony Bebber</a></small>
@@ -76,6 +79,7 @@
         <script src="bower_components/bootstrap-sass/js/bootstrap-collapse.js"></script>
         <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
         <script src="bower_components/html2canvas/build/html2canvas.js"></script>
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
         <script src="scripts/directives/players/player1.js"></script>
         <script src="scripts/controllers/players/player1.js"></script>
         <script src="scripts/directives/players/player2.js"></script>

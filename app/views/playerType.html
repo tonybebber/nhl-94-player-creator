@@ -4,21 +4,21 @@
 	</div>
 	<div class="clear"></div>
 	<a class="playerWrapOne" ng-click="setPlayerType('player')" ng-href="/#/{{player}}/teamSettings">
-		<div player-type="{{player}}" ng-mouseover="showInfo('one')" ng-mouseout="hideInfo('one')">
+		<div class="playerOneGo" player-type="{{player}}">
 			<star-under ng-show="infoVisible['one']"></star-under>
 			<player-one></player-one>
 			<number-and-position ng-show="infoVisible['one']" player-type="player" number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
 		</div>
 	</a>
 	<a class="playerWrapTwo" ng-click="setPlayerType('goalie')" ng-href="/#/{{player}}/teamSettings">
-		<div player-type="{{player}}" ng-mouseover="showInfo('two')" ng-mouseout="hideInfo('two')">
+		<div class="playerTwoGo" player-type="{{player}}">
 			<star-under ng-show="infoVisible['two']"></star-under>
 			<player-two></player-two>
 			<number-and-position ng-show="infoVisible['two']" player-type="goalie" number="{{goalieNumber}}" position="{{goaliePosition}}"></number-and-position>
 		</div>
 	</a>
 	<a class="playerWrapThree" ng-click="setPlayerType('enforcer')" ng-href="/#/{{player}}/teamSettings">
-		<div player-type="{{player}}" ng-mouseover="showInfo('three')" ng-mouseout="hideInfo('three')">
+		<div class="playerThreeGo" player-type="{{player}}">
 			<star-under ng-show="infoVisible['three']"></star-under>
 			<player-three></player-three>
 			<number-and-position ng-show="infoVisible['three']" player-type="enforcer" number="{{enforcerNumber}}" position="{{enforcerPosition}}"></number-and-position>

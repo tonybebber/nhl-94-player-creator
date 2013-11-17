@@ -33,8 +33,22 @@ angular.module('playerCreatorApp').controller('PlayerTypeCtrl',
 	};
 
 	$scope.setPlayerType = function(type) {
-    $scope.player = type;
-    $routeParams.playerType = type;
+        $scope.player = type;
+        $routeParams.playerType = type;
 	};
+
+    var addHoverNoTouch = function(el, num) {
+        $('.no-touch ' + el).hover(function() {
+            $scope.showInfo(num);
+            $scope.$apply();
+        }, function() {
+            $scope.hideInfo(num);
+            $scope.$apply();
+        });
+    }
+  
+    addHoverNoTouch('.playerOneGo', 'one');
+    addHoverNoTouch('.playerTwoGo', 'two');
+    addHoverNoTouch('.playerThreeGo', 'three');
 
 }]);
