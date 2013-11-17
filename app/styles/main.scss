@@ -70,6 +70,7 @@ body {
 }
 
 .container {
+    width: auto;
     height: 100%;
     display: table;
     position: relative;
@@ -118,7 +119,7 @@ body {
         font-size: 10px;
         position: absolute;
         margin-top: -28px;
-        margin-left: 268px;
+        margin-left: 284px;
         text-transform: uppercase;
         font-weight: normal;
         letter-spacing: 0.5px;
@@ -359,4 +360,214 @@ body {
 
 .thumbnails > li {
     margin: 20px;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+
+    .background-image {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        display: block;
+        margin: 0;
+
+        .pageWrap {
+            margin: 20px 0;
+            display: block;
+            width: 100%;
+
+            h1 {
+                font-size: 2.4em;
+            }
+
+            h2 {
+                z-index: 1000;
+                margin-top: 14px;
+                margin-left: 40%;
+            }
+
+            .details {
+                width: auto;
+            }
+
+            .well {
+                min-height: 100%;
+                max-height: 100%;
+
+                .btn-next {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    display: block;
+                }
+
+                .heading {
+
+                    h3 {
+                        width: auto;
+                        margin-top: 20px;
+                    }
+                }
+
+                .intro-text {
+
+                    p {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .main {
+
+                .playerWrap {
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
+
+            .playerType {
+
+                .playerWrapOne, .playerWrapTwo, .playerWrapThree {
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+
+                .playerWrapOne {
+                    margin-top: 30px;
+                }
+
+                .playerWrapThree {
+                    margin-top: 30px;
+                }
+            }
+
+            .teamSettings, .playerSettings {
+
+                .playerWrap {
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+
+                .formControls {
+                    margin: 0;
+                    padding: 0;
+
+                    .btn-next {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }        
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    
+    .background-image {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        display: block;
+        margin: 0;
+
+        .pageWrap {
+            margin: 20px 0;
+            display: block;
+            width: 100%;
+
+            h1 {
+                font-size: 2.4em;
+            }
+
+            h2 {
+                z-index: 1000;
+                margin-top: 14px;
+                margin-left: 40%;
+            }
+
+            .details {
+                width: auto;
+            }
+
+            .well {
+                min-height: 100%;
+                max-height: 100%;
+                padding: 19px 0 0;
+
+                .btn-next {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    display: block;
+                }
+
+                .heading {
+
+                    h3 {
+                        width: auto;
+                        margin: 20px 19px 0;
+                    }
+                }
+
+                .intro-text {
+                    padding: 0 19px 19px;
+
+                    p {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .main {
+
+                .playerWrap {
+                    position: relative;
+                    margin: 20px auto 0;
+                    padding: 0;
+                }
+            }
+
+            .playerType {
+
+                .playerWrapOne, .playerWrapTwo, .playerWrapThree {
+                    position: relative;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+
+                .playerWrapOne {
+                    margin-top: 20px
+                }
+
+                .playerWrapThree {
+                    margin-top: 30px;
+                }
+            }
+
+            .teamSettings, .playerSettings {
+
+                .playerWrap {
+                    position: relative;
+                    margin: 20px auto 0;
+                    padding: 0;
+                }
+
+                .formControls {
+                    margin: 0;
+                    padding: 0 19px 19px;
+
+                    .btn-next {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }        
+    }
 }

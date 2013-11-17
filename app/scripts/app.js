@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('playerCreatorApp', []).config(['$routeProvider', function ($routeProvider) {
+angular.module('playerCreatorApp', []).config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'views/main.html',
@@ -21,4 +21,9 @@ angular.module('playerCreatorApp', []).config(['$routeProvider', function ($rout
         .otherwise({
             redirectTo: '/'
         });
+
+
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+   
 }]);
