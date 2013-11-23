@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('playerCreatorApp', []).config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
+angular.module('playerCreatorApp', ['ngRoute', 'angularytics']).config(['$routeProvider', '$httpProvider', 'AngularyticsProvider', function ($routeProvider, $httpProvider, AngularyticsProvider) {
+
+    AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
 
     var $http,
         interceptor = ['$q', '$injector', function ($q, $injector) {
@@ -10,7 +12,7 @@ angular.module('playerCreatorApp', []).config(['$routeProvider', '$httpProvider'
                 // get $http via $injector because of circular dependency problem
                 $http = $http || $injector.get('$http');
                 if($http.pendingRequests.length < 1) {
-                    $('#spinner').hide();
+                    $('.spinner').hide();
                     $('#loadedContent').show();
                 }
                 return response;
@@ -20,7 +22,7 @@ angular.module('playerCreatorApp', []).config(['$routeProvider', '$httpProvider'
                 // get $http via $injector because of circular dependency problem
                 $http = $http || $injector.get('$http');
                 if($http.pendingRequests.length < 1) {
-                    $('#spinner').hide();
+                    $('.spinner').hide();
                     $('#loadedContent').show();
                 }
                 return $q.reject(response);
@@ -28,7 +30,7 @@ angular.module('playerCreatorApp', []).config(['$routeProvider', '$httpProvider'
 
             return function (promise) {
                 $('#loadedContent').hide();
-                $('#spinner').show();
+                $('.spinner').show();
                 return promise.then(success, error);
             }
         }];
@@ -68,4 +70,6 @@ angular.module('playerCreatorApp', []).config(['$routeProvider', '$httpProvider'
         document.documentElement.className += " no-touch";
     }
    
-}]);
+}]).run(function(Angularytics) {
+    Angularytics.init();
+});

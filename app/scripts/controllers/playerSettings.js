@@ -76,9 +76,13 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
     $scope.lastClass = 'last-page-back-button';
 
     $scope.openDownloader = function() {
+
+        $('.spinner-small').css('visibility', 'visible');
+
         if ($('#finalPlayer').length > 0) {
             $('#finalPlayer').remove();
         }
+        
         var element = document.querySelector('.playerWrap');
         html2canvas(element, {
             onrendered: function(canvas) {
@@ -97,6 +101,10 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
 
                 $('body').append(template);
                 $('#finalPlayer').modal({});
+
+                $timeout(function() {
+                    $('.spinner-small').css('visibility', 'hidden');
+                }, 3000);
             }
         });
     }

@@ -19,7 +19,10 @@
         <!-- endbuild -->
   </head>
   <body ng-app="playerCreatorApp">
-    <div class="background-image"></div>
+    <div class="bgi-wrap">
+        <div class="background-image"></div>
+        <div class="gradient-for-mobile"></div>
+    </div>
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -35,27 +38,30 @@
             <h2>Player Creator</h2>
             <div class="wellWrap">
                 <div class="well">
-                    <div id="spinner"></div>
+                    <div class="spinner"></div>
                     <!-- Add your site or application content here -->
                     <div id="loadedContent">
                         <div class="pageContent" ng-view></div>  
-                        <nav></nav>
                     </div>
+                    <nav></nav>
                 </div>
             </div>
             <small class="details span6">&copy;2013 Built by <a href="http://tonybebber.com">Tony Bebber</a></small>
         </div>
     </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src='//www.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-756452-15', 'nhl94player.com');
+        ga('send', 'pageview');
     </script>
 
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
@@ -80,6 +86,10 @@
         <script src="bower_components/bootstrap-sass/js/bootstrap-tab.js"></script>
         <script src="bower_components/html2canvas/build/html2canvas.js"></script>
         <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <script src="bower_components/angularytics/src/angularytics.js"></script>
+        <script src="bower_components/angularytics/src/consoleHandler.js"></script>
+        <script src="bower_components/angularytics/src/googleHandler.js"></script>
+        <script src="bower_components/angularytics/src/trackEventFilter.js"></script>
         <script src="scripts/directives/players/player1.js"></script>
         <script src="scripts/controllers/players/player1.js"></script>
         <script src="scripts/directives/players/player2.js"></script>
