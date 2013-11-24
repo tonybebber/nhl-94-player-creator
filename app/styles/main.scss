@@ -252,8 +252,10 @@ body {
     small.details {
         color: #333;
         font-size: .7em;
-        display: block;
+        display: inline;
+        float: left;
         position: relative;
+        margin: 10px 0;
 
         &.span6 {
             margin-left: 0;
@@ -367,6 +369,11 @@ body {
 
 .thumbnails > li {
     margin: 20px;
+}
+
+.social-share {
+    float: right;
+    margin: 10px 0;
 }
 
 @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
@@ -485,6 +492,14 @@ body {
                 }
             }
         }        
+    }
+    .pageWrap small.details {
+        display: block;
+        float: none;
+    }
+    .social-share {
+        float: left;
+        margin: 0 0 14px -2px;
     }
 }
 
@@ -606,6 +621,14 @@ body {
                 }
             }
         }        
+    }
+    .pageWrap small.details {
+        display: block;
+        float: none;
+    }
+    .social-share {
+        float: left;
+        margin: 0 0 14px -2px;
     }
 }
 
