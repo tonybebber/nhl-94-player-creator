@@ -3,7 +3,7 @@
 	    <h3>Choose your player settings</h3>
 	</div>
 	<div class="clear"></div>
-	<div class="playerWrap" player-type="{{player}}" ng-mouseover="showStar()" ng-mouseout="hideStar()">
+	<div class="playerWrap {{player}}_type" player-type="{{player}}" ng-mouseover="showStar()" ng-mouseout="hideStar()">
 		<div class="playerImage">
 			<star-under></star-under>
 			<div ng-show="player == 'player'">

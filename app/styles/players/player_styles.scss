@@ -323,7 +323,6 @@ $pixelSize: 5px;
 }
 
 .enforcer {
-    top: -30px;
 
     &.left {
         -moz-transform: scaleX(-1);
@@ -378,3 +377,27 @@ $pixelSize: 5px;
     bottom: 14px;
 }
 
+.playerWrap.enforcer_type,
+.playerWrapThree.enforcer_type {
+    height: 246px !important;
+    margin-top: -35px !important;
+    padding-top: 0 !important;
+}
+
+.enforcer_type .star {
+    top: 30px;
+}
+
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+    .playerWrap.enforcer_type,
+    .playerWrapThree.enforcer_type {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .playerWrap.enforcer_type,
+    .playerWrapThree.enforcer_type {
+        margin-top: 0 !important;
+    }
+}
