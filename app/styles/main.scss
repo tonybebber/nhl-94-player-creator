@@ -1,11 +1,6 @@
 @import "bootstrap-sass/lib/bootstrap";
 @import "players/player_styles";
 
-/* NHL Team Styles */
-@import "leagues/nhl/teams/coloradoavalanche";
-@import "leagues/nhl/teams/detroitredwings";
-@import "leagues/nhl/teams/newyorkrangers";
-
 @font-face {
     font-family: 'OctinSportsRgRegular';
     src: url('/fonts/octin_sports_rg-webfont.eot');

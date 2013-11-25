@@ -1,7 +1,77 @@
 [
 	{
-		"team": "detroitredwings",
-		"displayName": "Detroit Red Wings",
+		"team": "anaheimducks",
+		"displayName": "Anaheim Ducks",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "bostonbruins",
+		"displayName": "Boston Bruins",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "buffalosabres",
+		"displayName": "Buffalo Sabres",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "calgaryflames",
+		"displayName": "Calgary Flames",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "carolinahurricanes",
+		"displayName": "Carolina Hurricanes",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "chicagoblackhawks",
+		"displayName": "Chicago Blackhawks",
 		"jerseys": [
 			{
 				"displayName": "Home Jersey",
@@ -28,6 +98,160 @@
 		]
 	},
 	{
+		"team": "columbusbluejackets",
+		"displayName": "Columbus Blue Jackets",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "dallasstars",
+		"displayName": "Dallas Stars",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "detroitredwings",
+		"displayName": "Detroit Red Wings",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "edmontonoilers",
+		"displayName": "Edmonton Oilers",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "floridapanthers",
+		"displayName": "Florida Panthers",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "losangeleskings",
+		"displayName": "Los Angeles Kings",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "minnesotawild",
+		"displayName": "Minnesota Wild",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "montrealcanadiens",
+		"displayName": "Montreal Canadiens",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "nashvillepredators",
+		"displayName": "Nashville Predators",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "newjerseydevils",
+		"displayName": "New Jersey Devils",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "newyorkislanders",
+		"displayName": "New York Islanders",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
 		"team": "newyorkrangers",
 		"displayName": "New York Rangers",
 		"jerseys": [
@@ -40,5 +264,177 @@
 				"className": "away"
 			}
 		]
+	},
+	{
+		"team": "ottawasenators",
+		"displayName": "Ottawa Senators",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "philadelphiaflyers",
+		"displayName": "Philadelphia Flyers",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "phoenixcoyotes",
+		"displayName": "Phoenix Coyotes",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "pittsburghpenguins",
+		"displayName": "Pittsburgh Penguins",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "sanjosesharks",
+		"displayName": "San Jose Sharks",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "stlouisblues",
+		"displayName": "St. Louis Blues",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "tampabaylightning",
+		"displayName": "Tampa Bay Lightning",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "torontomapleleafs",
+		"displayName": "Toronto Maple Leafs",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "vancouvercanucks",
+		"displayName": "Vancouver Canucks",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "washingtoncapitals",
+		"displayName": "Washington Capitals",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
+	},
+	{
+		"team": "winnipegjets",
+		"displayName": "Winnipeg Jets",
+		"jerseys": [
+			{
+				"displayName": "Home Jersey",
+				"className": "home"
+			},
+			{
+				"displayName": "Away Jersey",
+				"className": "away"
+			}
+		]
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]
