@@ -404,6 +404,327 @@ $pixelSize: 5px;
 
 /* Jersey Colors */
 
+/* - ANAHEIM DUCKS */
+.anaheimducks {
+    &.home {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #EE5200;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #A77345;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #1A0809;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #A77345;
+        }
+        .uniform-pants {
+            background-color: #1A0809; 
+        }
+        .uniform-helmet {
+            background-color: #1A0809; 
+        }
+    }
+
+    &.away {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #A77345;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #A77345;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #E2E2E2;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #EE5200;
+        }
+        .uniform-pants {
+            background-color: #1A0809; 
+        }
+        .uniform-helmet {
+            background-color: #E2E2E2; 
+        }
+    }
+}
+
+/* - BOSTON BRUINS */
+.bostonbruins {
+    &.home {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #E2E2E2;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #FFBB00;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #333333;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #FFBB00;
+        }
+        .uniform-pants {
+            background-color: #333333; 
+        }
+        .uniform-helmet {
+            background-color: #333333; 
+        }
+    }
+
+    &.away {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #FFBB00;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #FFBB00;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #E2E2E2;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #333333;
+        }
+        .uniform-pants {
+            background-color: #333333; 
+        }
+        .uniform-helmet {
+            background-color: #E2E2E2; 
+        }
+    }
+}
+
+/* - BUFFALO SABRES */
+.buffalosabres {
+    &.home {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #FFBD14;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #E2E2E2;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #132558;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #132558;
+        }
+        .uniform-pants {
+            background-color: #132558; 
+        }
+        .uniform-helmet {
+            background-color: #132558; 
+        }
+    }
+
+    &.away {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #132558;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #E2E2E2;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #E2E2E2;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #FFBD14;
+        }
+        .uniform-pants {
+            background-color: #132558; 
+        }
+        .uniform-helmet {
+            background-color: #E2E2E2; 
+        }
+    }
+}
+
+/* - CALGARY FLAMES - */
+.calgaryflames {
+    &.home {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #F5C000;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #E2E2E2;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #c00000;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #c00000;
+        }
+        .uniform-pants {
+            background-color: #333333; 
+        }
+        .uniform-helmet {
+            background-color: #333333; 
+        }
+    }
+
+    &.away {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #F5C000;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #E2E2E2;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #E2E2E2;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #c00000;
+        }
+        .uniform-pants {
+            background-color: #333333; 
+        }
+        .uniform-helmet {
+            background-color: #E2E2E2; 
+        }
+    }
+}
+
+/* - CAROLINA HURRICANES - */
+.carolinahurricanes {
+    &.home {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #E2E2E2;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #E2E2E2;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #C50013;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #333333;
+        }
+        .uniform-pants {
+            background-color: #C50013; 
+        }
+        .uniform-helmet {
+            background-color: #C50013; 
+        }
+    }
+
+    &.away {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #333333;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #E2E2E2;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #E2E2E2;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #C50013;
+        }
+        .uniform-pants {
+            background-color: #C50013; 
+        }
+        .uniform-helmet {
+            background-color: #E2E2E2; 
+        }
+    }
+}
+
+/*C50013 red
+333333 black*/
+
+/* - CHICAGO BLACKHAWKS - */
+.chicagoblackhawks {
+    &.home {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #E2E2E2;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #E2E2E2;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #DF0025;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #DF0025;
+        }
+        .uniform-pants {
+            background-color: #333; 
+        }
+        .uniform-helmet {
+            background-color: #333; 
+        }
+    }
+
+    &.away {
+        /* thin line on jersey and sock */
+        .uniform-light {
+            background-color: #DF0025;
+        }
+        /* pants stripe */
+        .uniform-medium {
+            background-color: #E2E2E2;
+        }
+        /* main jersey color */
+        .uniform-dark {
+            background-color: #E2E2E2;
+        }
+        /* shoulder on jersey */
+        .uniform-dark-alt {
+            background-color: #E2E2E2;
+        }
+        .uniform-pants {
+            background-color: #333; 
+        }
+        .uniform-helmet {
+            background-color: #E2E2E2; 
+        }
+    }
+}
+
 /* - COLORADO AVALANCHE - */
 .coloradoavalanche {
     &.home {
