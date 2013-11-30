@@ -331,6 +331,24 @@ body {
         .halfSelect:last-child {
             float: right;
         }
+
+        .toggleStuff {
+            display: inline;
+            position: relative;
+            top: 6px;
+            z-index: 100;
+
+            input[type="checkbox"] {
+                margin-top: -2px;
+            }
+
+            label {
+                display: inline;
+                padding-left: 4px;
+                padding-right: 10px;
+                font-size: 12px;
+            }
+        }
     }
 
     .formControls {
@@ -491,6 +509,13 @@ body {
                     }
                 }
             }
+
+            .playerSettings {
+                .toggleStuff {
+                    margin-bottom: 25px;
+                    display: block;
+                }
+            }
         }        
     }
     .pageWrap small.details {
@@ -618,6 +643,13 @@ body {
                     .btn-next {
                         margin-top: 10px;
                     }
+                }
+            }
+
+            .playerSettings {
+                .toggleStuff {
+                    margin-bottom: 25px;
+                    display: block;
                 }
             }
         }        

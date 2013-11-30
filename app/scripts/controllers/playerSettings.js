@@ -75,6 +75,28 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
     $scope.lastPage = true;
     $scope.lastClass = 'last-page-back-button';
 
+    $scope.infoToggleVal = true;
+    $scope.infoVisible = true;
+    $scope.toggleInfo = function() {
+        $scope.infoToggleVal = !$scope.infoToggleVal;
+        if ($scope.infoToggleVal === true) {
+            $scope.infoVisible = true;
+        } else {
+            $scope.infoVisible = false;
+        }
+    };
+
+    $scope.starToggleVal = true;
+    $scope.starVisible = true;
+    $scope.toggleStar = function() {
+        $scope.starToggleVal = !$scope.starToggleVal;
+        if ($scope.starToggleVal === true) {
+            $scope.starVisible = true;
+        } else {
+            $scope.starVisible = false;
+        }
+    };
+
     $scope.openDownloader = function() {
 
         $('.spinner-small').css('visibility', 'visible');

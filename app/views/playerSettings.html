@@ -5,18 +5,18 @@
 	<div class="clear"></div>
 	<div class="playerWrap {{player}}_type" player-type="{{player}}" ng-mouseover="showStar()" ng-mouseout="hideStar()">
 		<div class="playerImage">
-			<star-under></star-under>
+			<star-under ng-show="starVisible"></star-under>
 			<div ng-show="player == 'player'">
 				<player-one></player-one>
-				<number-and-position number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
+				<number-and-position ng-show="infoVisible" number="{{playerNumber}}" position="{{playerPosition}}"></number-and-position>
 			</div>
 			<div ng-show="player == 'goalie'">
 				<player-two></player-two>
-				<number-and-position number="{{goalieNumber}}" position="{{goaliePosition}}"></number-and-position>
+				<number-and-position ng-show="infoVisible" number="{{goalieNumber}}" position="{{goaliePosition}}"></number-and-position>
 			</div>
 			<div ng-show="player == 'enforcer'">
 				<player-three></player-three>
-				<number-and-position number="{{enforcerNumber}}" position="{{enforcerPosition}}"></number-and-position>
+				<number-and-position ng-show="infoVisible" number="{{enforcerNumber}}" position="{{enforcerPosition}}"></number-and-position>
 			</div>
 		</div>
 	</div>
@@ -24,8 +24,13 @@
 		<select ng-model="hand" ng-options="hand.name as hand.displayName for hand in hands"></select>
 
 		<div>
-			<select class="halfSelect" ng-model="playerNumber" ng-options="number for number in numbers"></select>
-			<select class="halfSelect" ng-model="playerPosition" ng-options="position.value as position.display for position in positions"></select>
+			<select class="halfSelect" ng-disabled="!infoVisible" ng-model="playerNumber" ng-options="number for number in numbers"></select>
+			<select class="halfSelect" ng-disabled="!infoVisible" ng-model="playerPosition" ng-options="position.value as position.display for position in positions"></select>
+		</div>
+
+		<div class="toggleStuff">
+			<input id="toggleInfo" type="checkbox" ng-model="infoToggleVal" ng-click="toggleInfo()" /><label for="toggleInfo">Show Info</label>
+			<input id="toggleStar" type="checkbox" ng-model="starToggleVal" ng-click="toggleStar()" /><label for="toggleStar">Show Star</label>
 		</div>
 
 		<pagination back="/#/{{player}}/teamSettings" next="/#/{{player}}/{{teamName}}/{{jersey}}/{{hand}}/{{playerNumber}}/{{playerPosition}}"></pagination>
