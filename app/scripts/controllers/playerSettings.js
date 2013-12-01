@@ -126,7 +126,7 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
                                                 '<img class="tooltipPlayer" src="'+playerImg+'" title="Click to download your player!"/>' +
                                             '</a>' +
                                             '<p><a href="data:image/png;'+playerImg+'" download="nhl94player.png" class="btn btn-primary btn-next">Download Player <i class="icon-download"></i></a></p>' +
-                                            '<p class="small-modal-text">If download button doesn\'t work, right-click and save the image the old-fashioned way.</p>' +
+                                            '<p class="small-modal-text">If download button doesn\'t work (you might be on an older browser), right-click and save the image the old-fashioned way.</p>' +
                                             '<p class="small-modal-text">Also, it\'s worth noting that images render the best in <a href="https://www.google.com/intl/en/chrome/browser/?&brand=CHMB&utm_campaign=en&utm_source=en-ha-na-us-sk&utm_medium=ha" target="_blank">Chrome</a>.</p>' +
                                         '</div>' +
                                     '</li>' +
