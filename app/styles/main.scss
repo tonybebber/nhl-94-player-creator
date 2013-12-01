@@ -147,10 +147,13 @@ body {
         -moz-border-radius: 0;
         border-radius: 0;
         background-color: rgba(255, 255, 255, 0.8);
+        overflow: hidden;
 
         .heading {
             display: block;
             height: 24px;
+            position: relative;
+            z-index: 100;
 
             h1 {
                 color: #1360A1;
@@ -235,12 +238,18 @@ body {
 
         .btn-steps {
             position: absolute;
-            right: -26px;
+            right: 18px;
             top: 14px;
+            z-index: 101;
 
             .chiclet {
                 padding: 6px 9px;
                 display: block;
+            }
+
+            .btn-mini {
+                padding-left: 8px;
+                padding-right: 8px;
             }
         }
     }
@@ -280,6 +289,10 @@ body {
 
     /* playerType.html styles */
     .playerType {
+
+        .heading {
+            z-index: 0;
+        }
 
         .playerWrapOne {
             display: block;
@@ -359,6 +372,12 @@ body {
     .formControls {
         margin: 0 0 0 172px;
         padding: 10px 0 20px 20px;
+        position: relative;
+        height: 176px;
+
+        .btn-next {
+            right: 0;
+        }
 
         select {
             width: 100%;
@@ -447,7 +466,7 @@ body {
             h2 {
                 z-index: 1000;
                 margin-top: 14px;
-                margin-left: 40%;
+                margin-left: 20%;
             }
 
             .details {
@@ -519,6 +538,7 @@ body {
                 .formControls {
                     margin: 0;
                     padding: 0;
+                    height: auto;
 
                     .btn-next {
                         margin-top: 10px;
@@ -581,7 +601,7 @@ body {
             h2 {
                 z-index: 1000;
                 margin-top: 14px;
-                margin-left: 40%;
+                margin-left: 20%;
             }
 
             .details {
@@ -655,6 +675,7 @@ body {
                 .formControls {
                     margin: 0;
                     padding: 0 19px 19px;
+                    height: auto;
 
                     .btn-next {
                         margin-top: 10px;
