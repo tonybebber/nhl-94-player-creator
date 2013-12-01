@@ -31,6 +31,10 @@
 		<div class="toggleStuff">
 			<input id="toggleInfo" type="checkbox" ng-model="infoToggleVal" ng-click="toggleInfo()" /><label for="toggleInfo">Show Info</label>
 			<input id="toggleStar" type="checkbox" ng-model="starToggleVal" ng-click="toggleStar()" /><label for="toggleStar">Show Star</label>
+			<div class="clear"></div>
+			<div class="transparencyWrap">
+				<input id="toggleTransparency" type="checkbox" ng-model="transparencyToggleVal" ng-click="toggleTransparency()" /><label for="toggleTransparency">Use Transparent Background</label>
+			</div>
 		</div>
 
 		<pagination back="/#/{{player}}/teamSettings" next="/#/{{player}}/{{teamName}}/{{jersey}}/{{hand}}/{{playerNumber}}/{{playerPosition}}"></pagination>

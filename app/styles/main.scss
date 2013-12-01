@@ -335,7 +335,7 @@ body {
         .toggleStuff {
             display: inline;
             position: relative;
-            top: 6px;
+            top: 7px;
             z-index: 100;
 
             input[type="checkbox"] {
@@ -347,6 +347,11 @@ body {
                 padding-left: 4px;
                 padding-right: 10px;
                 font-size: 12px;
+            }
+
+            .transparencyWrap {
+                margin-top: 5px;
+                display: inline-block;
             }
         }
     }
@@ -362,6 +367,17 @@ body {
         }
     }
 
+}
+
+.small-modal-text {
+    font-size: 10px;
+    text-align: left !important;
+    padding: 0 5px;
+    line-height: 12px;
+}
+
+.whiteBg {
+    background-color: #FFF !important;
 }
 
 .modal {
