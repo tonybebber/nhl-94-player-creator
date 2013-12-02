@@ -9,7 +9,8 @@ angular.module('playerCreatorApp').factory('defaultPlayerService', [function() {
     		jersey: 'home',
     		number: '11',
     		hand: 'left',
-    		position: 'C'
+    		position: 'C',
+            skin: 'lightSkin'
     	},
     	goalie: {
     		name: 'Mike Richter',
@@ -17,7 +18,8 @@ angular.module('playerCreatorApp').factory('defaultPlayerService', [function() {
     		jersey: 'home',
     		number: '35',
     		hand: 'right',
-    		position: 'G'
+    		position: 'G',
+            skin: 'lightSkin'
     	},
     	enforcer: {
     		name: 'Jeff Beukeboom',
@@ -25,7 +27,8 @@ angular.module('playerCreatorApp').factory('defaultPlayerService', [function() {
     		jersey: 'home',
     		number: '23',
     		hand: 'right',
-    		position: 'D'
+    		position: 'D',
+            skin: 'lightSkin'
     	}
     };
 

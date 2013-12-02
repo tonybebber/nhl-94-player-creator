@@ -279,6 +279,30 @@ $pixelSize: 5px;
         background-color: #D78f99;
     }
 
+    &.lightSkin {
+
+        .skin {
+            background-color: #D78f99;
+        }
+    }
+
+    &.mediumSkin {
+
+        .skin {
+            background-color: #B67555;
+        }
+    }
+
+    &.darkSkin {
+
+        .skin {
+            background-color: #462C29;
+        }
+        .eyes {
+            background-color: #000;
+        }
+    }
+
     .eyes {
         background-color: #670109;
     }

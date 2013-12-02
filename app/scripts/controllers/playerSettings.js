@@ -8,6 +8,7 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
     $scope.player = $routeParams.playerType;
 
     $scope.hand = defaultPlayerService.player.hand;
+    $scope.skin = defaultPlayerService.player.skin;
 
     if ($routeParams.playerType === 'player') {
         $scope.playerNumber = defaultPlayerService.player.number;
@@ -29,6 +30,27 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
   			name: 'right',
   			displayName: 'Right Handed'
   		}
+    ];
+
+    if ($scope.player === 'goalie') {
+        $scope.isGoalie = true;
+    } else {
+        $scope.isGoalie = false;
+    }
+
+    $scope.skins = [
+        {
+            name: 'lightSkin',
+            displayName: 'Light Skin Tone'
+        },
+        {
+            name: 'mediumSkin',
+            displayName: 'Medium Skin Tone'
+        },
+        {
+            name: 'darkSkin',
+            displayName: 'Dark Skin Tone'
+        },
     ]
 
     $scope.positions = [
@@ -52,7 +74,7 @@ angular.module('playerCreatorApp').controller('PlayerSettingsCtrl',
             value: 'G',
             display: 'Goalie'
         }
-    ]
+    ];
 
     if ($scope.player !== 'goalie') {
         $scope.positions = _.filter($scope.positions, function(data) {

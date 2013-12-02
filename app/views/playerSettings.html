@@ -21,7 +21,13 @@
 		</div>
 	</div>
 	<div class="formControls">
-		<select ng-model="hand" ng-options="hand.name as hand.displayName for hand in hands"></select>
+
+		<div ng-hide="isGoalie">
+			<select class="halfSelect" ng-model="hand" ng-options="hand.name as hand.displayName for hand in hands"></select>
+			<select class="halfSelect" ng-model="skin" ng-options="skin.name as skin.displayName for skin in skins"></select>
+		</div>
+
+		<select ng-show="isGoalie" ng-model="hand" ng-options="hand.name as hand.displayName for hand in hands"></select>
 
 		<div>
 			<select class="halfSelect" ng-disabled="!infoVisible" ng-model="playerNumber" ng-options="number for number in numbers"></select>
